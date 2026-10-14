@@ -1,0 +1,2 @@
+cp template/template.cpp beecrowd/1022.cpp
+cpp beecrowd/1022.cpp && ./build/sol   
