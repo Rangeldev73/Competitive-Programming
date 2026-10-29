@@ -8,19 +8,19 @@ void solve() {
     cin >> s;
     int size = s.size();
     char cr = s[0];
-    int br=1,rc=1;
+    int biggrep=1,repcount=1;
     for(int i=1;i<size;i++) {
-        char cc = s[i];
-        if(cc==cr) {
-            rc++;
+        char currchar = s[i];
+        if(currchar==cr) {
+            repcount++;
         }
         else {
-            cr = cc;
-            rc=1;
+            cr = currchar;
+            repcount=1;
         }
-        if(rc>br) br=rc;
+        if(repcount>biggrep) biggrep=repcount;
     }
-    cout << br << "\n";
+    cout << biggrep << "\n";
 }
 //1123455566
 int main() {
